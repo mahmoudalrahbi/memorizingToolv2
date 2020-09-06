@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+    <title>Memorizing tool!</title>
+
+    <meta charset="UTF-8">
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+</head>
+
+<body dir="rtl">
+    <div class="container" dir="rtl">
+        <div class="row" style="margin-top: 50px;"  dir="rtl">
+            <label id="lan" class="langLabel">اللغة: </label>
+            <div class="btn-group btn-group-toggle bg-secondary" data-toggle="buttons" dir="rtl">
+              
+                <a href="index.html"  class="btn btn-secondary active" language="arabic">العربية</a>
+                <a href="index-en.html" class="btn btn-secondary" language="english">English</a>
+            </div>
+
+            <!-- <button type="button" onclick="" id="english" style="margin-right: 5px;" disabled>English</button>
+            <button type="button" onclick="" id="arabic">عربي</button> -->
+        </div>
+        <!-- <div class="row" style="margin-top: 10px;" dir='rtl'>
+            <div class="col-md-6"> <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label></div>
+            <div class="col-md-6"> <label for="rightTextArea"  id="typeLabel" dir='rtl'>أكتب هنا:</label></div>
+        </div> -->
+        <div class="row" style="margin-top: 10px;" dir='rtl' lang='ar'>
+
+            <div class="col-md-6 text-right" dir='rtl' lang='ar'>
+                <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label>
+                <textarea id="leftTextArea" dir='rtl' lang='ar' style="width: 100%;" rows="10" value=""></textarea>
+            </div>
+            <div class="col-md-6 text-right" dir='rtl' lang='ar'>
+                <label for="rightTextArea" id="typeLabel" dir='rtl'>أكتب هنا:</label>
+                <textarea id="rightTextArea" dir='rtl' lang='ar' style="width: 100%;" rows="10" value=""></textarea>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <button type="button" onclick="startProcessing()" id="startButton">ابدأ في الحفظ</button>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        // const langEl = document.querySelector('.langWrap');
+        // const container = document.querySelector('.container');
+        // const link = document.querySelectorAll('a');
+        // const langLabel = document.querySelector('.langLabel');
+
+
+        // link.forEach(el=>{
+        //     el.addEventListener('click',()=>{
+        //         const attr= el.getAttribute('language');
+
+        //         langLabel.textContent = data[attr].lan;
+        //         container.setAttribute("dir",data[attr].dir);
+        //     });
+        // });
+
+
+        // var data={
+
+        //     "english":{
+        //         "dir":"ltr",
+        //         "lan":"Language"
+        //     },
+        //     "arabic":{
+        //         "dir":"rtl",
+        //         "lan":"اللغة"
+        //     }
+
+        // };
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

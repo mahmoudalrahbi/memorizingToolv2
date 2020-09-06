@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+    <title>Memorizing tool!</title>
+
+    <meta charset="UTF-8">
+
+
+    <script type="text/javascript" src="script-en.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+</head>
+
+<body dir="rtl">
+    <div class="container" dir="ltr">
+        <div class="row" style="margin-top: 50px;">
+            <label id="lan" class="langLabel">Language: </label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <a href="index-en.html" class="btn btn-secondary active" language="english">English</a>
+                <a href="index.html" class="btn btn-secondary" language="arabic">العربية</a>
+            </div>
+
+            <!-- <button type="button" onclick="" id="english" style="margin-right: 5px;" disabled>English</button>
+            <button type="button" onclick="" id="arabic">عربي</button> -->
+        </div>
+        <!-- <div class="row" style="margin-top: 10px;" dir='rtl'>
+            <div class="col-md-6"> <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label></div>
+            <div class="col-md-6"> <label for="rightTextArea"  id="typeLabel" dir='rtl'>أكتب هنا:</label></div>
+        </div> -->
+        <div class="row" style="margin-top: 10px;" dir='ltr' lang='ar'>
+
+            <div class="col-md-6" dir='ltr' lang='ar'>
+                <label for="leftTextArea" id="pasteLabel" dir='ltr'>Paste here:</label>
+                <textarea id="leftTextArea" dir='ltr' lang='ar' style="width: 100%;" rows="10" value=""></textarea>
+            </div>
+            <div class="col-md-6" dir='rtl' lang='ar'>
+                <label for="rightTextArea" id="typeLabel" dir='ltr'>Type here:</label>
+                <textarea id="rightTextArea" dir='ltr' lang='ar' style="width: 100%;" rows="10" value=""></textarea>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <button type="button" onclick="startProcessing()" id="startButton">Start Memorizing</button>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        // const langEl = document.querySelector('.langWrap');
+        // const container = document.querySelector('.container');
+        // const link = document.querySelectorAll('a');
+        // const langLabel = document.querySelector('.langLabel');
+
+
+        // link.forEach(el=>{
+        //     el.addEventListener('click',()=>{
+        //         const attr= el.getAttribute('language');
+
+        //         langLabel.textContent = data[attr].lan;
+        //         container.setAttribute("dir",data[attr].dir);
+        //     });
+        // });
+
+
+        // var data={
+
+        //     "english":{
+        //         "dir":"ltr",
+        //         "lan":"Language"
+        //     },
+        //     "arabic":{
+        //         "dir":"rtl",
+        //         "lan":"اللغة"
+        //     }
+
+        // };
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
