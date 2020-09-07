@@ -28,11 +28,31 @@
             <!-- <button type="button" onclick="" id="english" style="margin-right: 5px;" disabled>English</button>
             <button type="button" onclick="" id="arabic">عربي</button> -->
         </div>
+
+        <div class="row " style="margin-top: 30px; ">
+            <div class="col-md-6 " dir='ltr' lang='en'>
+                <p>Correction method:</p>
+                <input type="radio" id="word" name="method" value="word" checked onclick="displayInputFiled()">
+                <label for="male">Words</label>
+
+                <input type="radio" id="sentence" name="method" value="sentence" onclick="displayInputFiled()">
+                <label for="female">Sentence</label>
+
+                
+            </div>
+        </div>
+
+        <div class="row " style="margin-top: 30px; display: none;" id="charDiv" >
+            <div class="col-md-6 " dir='ltr' lang='en'>
+                <span>Sympole of End Sentence:</span>
+                <input type="text" name="character" value="" maxLength="1" id="characterFiled" size="1">
+            </div>
+        </div>
         <!-- <div class="row" style="margin-top: 10px;" dir='rtl'>
             <div class="col-md-6"> <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label></div>
             <div class="col-md-6"> <label for="rightTextArea"  id="typeLabel" dir='rtl'>أكتب هنا:</label></div>
         </div> -->
-        <div class="row" style="margin-top: 10px;" dir='ltr' lang='ar'>
+        <div class="row" style="margin-top: 30px;" dir='ltr' lang='ar'>
 
             <div class="col-md-6" dir='ltr' lang='ar'>
                 <label for="leftTextArea" id="pasteLabel" dir='ltr'>Paste here:</label>

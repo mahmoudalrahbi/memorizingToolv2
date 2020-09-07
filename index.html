@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
 
-
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -18,22 +18,44 @@
 
 <body dir="rtl">
     <div class="container" dir="rtl">
-        <div class="row" style="margin-top: 50px;"  dir="rtl">
+        <div class="row" style="margin-top: 50px;" dir="rtl">
             <label id="lan" class="langLabel">اللغة: </label>
             <div class="btn-group btn-group-toggle bg-secondary" data-toggle="buttons" dir="rtl">
-              
-                <a href="index.html"  class="btn btn-secondary active" language="arabic">العربية</a>
+
+                <a href="index.html" class="btn btn-secondary active" language="arabic">العربية</a>
                 <a href="index-en.html" class="btn btn-secondary" language="english">English</a>
             </div>
 
             <!-- <button type="button" onclick="" id="english" style="margin-right: 5px;" disabled>English</button>
             <button type="button" onclick="" id="arabic">عربي</button> -->
         </div>
+
+        <div class="row " style="margin-top: 30px; ">
+            <div class="col-md-6 text-right" dir='rtl' lang='ar'>
+                <p>طريقة التصحيح:</p>
+                <input type="radio" id="word" name="method" value="word" checked onclick="displayInputFiled()">
+                <label for="male">الكلمات</label>
+
+                <input type="radio" id="sentence" name="method" value="sentence" onclick="displayInputFiled()">
+                <label for="female">الجمل والأيات</label>
+
+                
+            </div>
+        </div>
+
+        <div class="row " style="margin-top: 30px; display: none;" id="charDiv" >
+            <div class="col-md-6 text-right" dir='rtl' lang='ar'>
+                <span>رمز نهاية الجملة:</span>
+                <input type="text" name="character" value="" maxLength="1" id="characterFiled" size="1">
+            </div>
+        </div>
+
         <!-- <div class="row" style="margin-top: 10px;" dir='rtl'>
             <div class="col-md-6"> <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label></div>
             <div class="col-md-6"> <label for="rightTextArea"  id="typeLabel" dir='rtl'>أكتب هنا:</label></div>
         </div> -->
-        <div class="row" style="margin-top: 10px;" dir='rtl' lang='ar'>
+        <div class="row" style="margin-top: 30px;" dir='rtl' lang='ar'>
+
 
             <div class="col-md-6 text-right" dir='rtl' lang='ar'>
                 <label for="leftTextArea" id="pasteLabel" dir='rtl'>الصق هنا:</label>
@@ -41,8 +63,13 @@
             </div>
             <div class="col-md-6 text-right" dir='rtl' lang='ar'>
                 <label for="rightTextArea" id="typeLabel" dir='rtl'>أكتب هنا:</label>
-                <textarea id="rightTextArea" dir='rtl' lang='ar' style="width: 100%;" rows="10" value=""></textarea>
+                <textarea id="rightTextArea" dir='rtl' lang='ar' srows="10" value=""></textarea>
             </div>
+            <!-- 
+            <div class="col-md-2 text-right" dir='rtl' lang='ar'>
+                <label for="rightTextArea" id="typeLabel" dir='rtl'>أكتب هنا:</label>
+                <textarea id="rightTextArea" dir='rtl' lang='ar'  rows="10" value=""></textarea>
+            </div> -->
         </div>
 
         <div class="row" style="margin-top: 30px;">
